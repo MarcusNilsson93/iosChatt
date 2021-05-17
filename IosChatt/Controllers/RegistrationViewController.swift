@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  RegistrationViewController.swift
 //  IosChatt
 //
 //  Created by Marcus Nilsson on 2021-05-17.
@@ -7,13 +7,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class RegistrationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        view.backgroundColor = .yellow
     }
-
+    
 
 }
-
