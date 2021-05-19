@@ -8,25 +8,14 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-
+    @IBOutlet weak var loginUsernameTextfield: UITextField!
+    @IBOutlet weak var loginPasswordTextfield: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "Login"
-        view.backgroundColor = .lightGray
-        
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Register",
-                                                            style: .done,
-                                                            target: self,
-                                                            action: #selector(didTapRegister))
     }
-    
-    @objc private func didTapRegister() {
-        let vc = RegistrationViewController()
-        vc.title = "Register an acount"
-        navigationController?.pushViewController(vc, animated: true)
+    @IBAction func loginButtonAction(_ sender: Any) {
     }
-    
-
     
 }

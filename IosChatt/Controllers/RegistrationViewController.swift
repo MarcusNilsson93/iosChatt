@@ -8,12 +8,16 @@
 import UIKit
 
 class RegistrationViewController: UIViewController {
-
+    @IBOutlet weak var registerEmailTextfield: UITextField!
+    @IBOutlet weak var registerUsernameTextfield: UITextField!
+    @IBOutlet weak var registerPasswordTextfield: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .yellow
     }
     
-
+    @IBAction func registerButtonAction(_ sender: Any) {
+    }
+    
 }

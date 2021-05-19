@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2C1F1C3F26525EC900AEF8A8 /* IosChatt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IosChatt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C1F1C3F26525EC900AEF8A8 /* IosChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IosChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C1F1C4226525EC900AEF8A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C1F1C4426525EC900AEF8A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2C1F1C4626525EC900AEF8A8 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
@@ -45,10 +45,10 @@
 		2C1F1C4B26525ED100AEF8A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C1F1C4E26525ED100AEF8A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C1F1C5026525ED100AEF8A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2C1F1C5526525ED100AEF8A8 /* IosChattTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IosChattTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C1F1C5526525ED100AEF8A8 /* IosChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IosChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C1F1C5926525ED100AEF8A8 /* IosChattTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IosChattTests.swift; sourceTree = "<group>"; };
 		2C1F1C5B26525ED100AEF8A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2C1F1C6026525ED100AEF8A8 /* IosChattUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IosChattUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C1F1C6026525ED100AEF8A8 /* IosChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IosChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C1F1C6426525ED100AEF8A8 /* IosChattUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IosChattUITests.swift; sourceTree = "<group>"; };
 		2C1F1C6626525ED100AEF8A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C1F1C782652976600AEF8A8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -93,9 +93,9 @@
 		2C1F1C4026525EC900AEF8A8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2C1F1C3F26525EC900AEF8A8 /* IosChatt.app */,
-				2C1F1C5526525ED100AEF8A8 /* IosChattTests.xctest */,
-				2C1F1C6026525ED100AEF8A8 /* IosChattUITests.xctest */,
+				2C1F1C3F26525EC900AEF8A8 /* IosChat.app */,
+				2C1F1C5526525ED100AEF8A8 /* IosChatTests.xctest */,
+				2C1F1C6026525ED100AEF8A8 /* IosChatUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -185,9 +185,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2C1F1C3E26525EC800AEF8A8 /* IosChatt */ = {
+		2C1F1C3E26525EC800AEF8A8 /* IosChat */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2C1F1C6926525ED100AEF8A8 /* Build configuration list for PBXNativeTarget "IosChatt" */;
+			buildConfigurationList = 2C1F1C6926525ED100AEF8A8 /* Build configuration list for PBXNativeTarget "IosChat" */;
 			buildPhases = (
 				2C1F1C3B26525EC800AEF8A8 /* Sources */,
 				2C1F1C3C26525EC800AEF8A8 /* Frameworks */,
@@ -197,14 +197,14 @@
 			);
 			dependencies = (
 			);
-			name = IosChatt;
+			name = IosChat;
 			productName = IosChatt;
-			productReference = 2C1F1C3F26525EC900AEF8A8 /* IosChatt.app */;
+			productReference = 2C1F1C3F26525EC900AEF8A8 /* IosChat.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2C1F1C5426525ED100AEF8A8 /* IosChattTests */ = {
+		2C1F1C5426525ED100AEF8A8 /* IosChatTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2C1F1C6C26525ED100AEF8A8 /* Build configuration list for PBXNativeTarget "IosChattTests" */;
+			buildConfigurationList = 2C1F1C6C26525ED100AEF8A8 /* Build configuration list for PBXNativeTarget "IosChatTests" */;
 			buildPhases = (
 				2C1F1C5126525ED100AEF8A8 /* Sources */,
 				2C1F1C5226525ED100AEF8A8 /* Frameworks */,
@@ -215,14 +215,14 @@
 			dependencies = (
 				2C1F1C5726525ED100AEF8A8 /* PBXTargetDependency */,
 			);
-			name = IosChattTests;
+			name = IosChatTests;
 			productName = IosChattTests;
-			productReference = 2C1F1C5526525ED100AEF8A8 /* IosChattTests.xctest */;
+			productReference = 2C1F1C5526525ED100AEF8A8 /* IosChatTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		2C1F1C5F26525ED100AEF8A8 /* IosChattUITests */ = {
+		2C1F1C5F26525ED100AEF8A8 /* IosChatUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2C1F1C6F26525ED100AEF8A8 /* Build configuration list for PBXNativeTarget "IosChattUITests" */;
+			buildConfigurationList = 2C1F1C6F26525ED100AEF8A8 /* Build configuration list for PBXNativeTarget "IosChatUITests" */;
 			buildPhases = (
 				2C1F1C5C26525ED100AEF8A8 /* Sources */,
 				2C1F1C5D26525ED100AEF8A8 /* Frameworks */,
@@ -233,9 +233,9 @@
 			dependencies = (
 				2C1F1C6226525ED100AEF8A8 /* PBXTargetDependency */,
 			);
-			name = IosChattUITests;
+			name = IosChatUITests;
 			productName = IosChattUITests;
-			productReference = 2C1F1C6026525ED100AEF8A8 /* IosChattUITests.xctest */;
+			productReference = 2C1F1C6026525ED100AEF8A8 /* IosChatUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -260,7 +260,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2C1F1C3A26525EC800AEF8A8 /* Build configuration list for PBXProject "IosChatt" */;
+			buildConfigurationList = 2C1F1C3A26525EC800AEF8A8 /* Build configuration list for PBXProject "IosChat" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -273,9 +273,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2C1F1C3E26525EC800AEF8A8 /* IosChatt */,
-				2C1F1C5426525ED100AEF8A8 /* IosChattTests */,
-				2C1F1C5F26525ED100AEF8A8 /* IosChattUITests */,
+				2C1F1C3E26525EC800AEF8A8 /* IosChat */,
+				2C1F1C5426525ED100AEF8A8 /* IosChatTests */,
+				2C1F1C5F26525ED100AEF8A8 /* IosChatUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -341,12 +341,12 @@
 /* Begin PBXTargetDependency section */
 		2C1F1C5726525ED100AEF8A8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2C1F1C3E26525EC800AEF8A8 /* IosChatt */;
+			target = 2C1F1C3E26525EC800AEF8A8 /* IosChat */;
 			targetProxy = 2C1F1C5626525ED100AEF8A8 /* PBXContainerItemProxy */;
 		};
 		2C1F1C6226525ED100AEF8A8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2C1F1C3E26525EC800AEF8A8 /* IosChatt */;
+			target = 2C1F1C3E26525EC800AEF8A8 /* IosChat */;
 			targetProxy = 2C1F1C6126525ED100AEF8A8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -545,7 +545,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IosChatt.app/IosChatt";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IosChat.app/IosChat";
 			};
 			name = Debug;
 		};
@@ -567,7 +567,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IosChatt.app/IosChatt";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IosChat.app/IosChat";
 			};
 			name = Release;
 		};
@@ -614,7 +614,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2C1F1C3A26525EC800AEF8A8 /* Build configuration list for PBXProject "IosChatt" */ = {
+		2C1F1C3A26525EC800AEF8A8 /* Build configuration list for PBXProject "IosChat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2C1F1C6726525ED100AEF8A8 /* Debug */,
@@ -623,7 +623,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2C1F1C6926525ED100AEF8A8 /* Build configuration list for PBXNativeTarget "IosChatt" */ = {
+		2C1F1C6926525ED100AEF8A8 /* Build configuration list for PBXNativeTarget "IosChat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2C1F1C6A26525ED100AEF8A8 /* Debug */,
@@ -632,7 +632,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2C1F1C6C26525ED100AEF8A8 /* Build configuration list for PBXNativeTarget "IosChattTests" */ = {
+		2C1F1C6C26525ED100AEF8A8 /* Build configuration list for PBXNativeTarget "IosChatTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2C1F1C6D26525ED100AEF8A8 /* Debug */,
@@ -641,7 +641,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2C1F1C6F26525ED100AEF8A8 /* Build configuration list for PBXNativeTarget "IosChattUITests" */ = {
+		2C1F1C6F26525ED100AEF8A8 /* Build configuration list for PBXNativeTarget "IosChatUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2C1F1C7026525ED100AEF8A8 /* Debug */,
