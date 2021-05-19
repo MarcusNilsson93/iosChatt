@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24B904EF208AB19607A23D89 /* Pods_IosChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 373CB98868D831105E00FF8A /* Pods_IosChat.framework */; };
 		2C1F1C4326525EC900AEF8A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1F1C4226525EC900AEF8A8 /* AppDelegate.swift */; };
 		2C1F1C4526525EC900AEF8A8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1F1C4426525EC900AEF8A8 /* SceneDelegate.swift */; };
 		2C1F1C4726525EC900AEF8A8 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1F1C4626525EC900AEF8A8 /* ChatViewController.swift */; };
@@ -17,6 +18,9 @@
 		2C1F1C6526525ED100AEF8A8 /* IosChattUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1F1C6426525ED100AEF8A8 /* IosChattUITests.swift */; };
 		2C1F1C792652976600AEF8A8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1F1C782652976600AEF8A8 /* LoginViewController.swift */; };
 		2C1F1C7B2652978F00AEF8A8 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1F1C7A2652978F00AEF8A8 /* RegistrationViewController.swift */; };
+		2C1F1C7D2655078F00AEF8A8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C1F1C7C2655078F00AEF8A8 /* GoogleService-Info.plist */; };
+		5DDBF3856D176D9A39F5CC21 /* Pods_IosChat_IosChatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4B90FD034890E64DCA108A3 /* Pods_IosChat_IosChatUITests.framework */; };
+		A6D39C9CC76C122B00EFB0B7 /* Pods_IosChatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9DA24EF90D4CB07ACD2E920 /* Pods_IosChatTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,16 @@
 		2C1F1C6626525ED100AEF8A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C1F1C782652976600AEF8A8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2C1F1C7A2652978F00AEF8A8 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		2C1F1C7C2655078F00AEF8A8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		373CB98868D831105E00FF8A /* Pods_IosChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IosChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68A44A86F202F878F49B8E47 /* Pods-IosChat-IosChatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosChat-IosChatUITests.debug.xcconfig"; path = "Target Support Files/Pods-IosChat-IosChatUITests/Pods-IosChat-IosChatUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8D05630A56FDB04B863E462F /* Pods-IosChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosChat.debug.xcconfig"; path = "Target Support Files/Pods-IosChat/Pods-IosChat.debug.xcconfig"; sourceTree = "<group>"; };
+		958E4E3B8463294CF20F103C /* Pods-IosChat-IosChatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosChat-IosChatUITests.release.xcconfig"; path = "Target Support Files/Pods-IosChat-IosChatUITests/Pods-IosChat-IosChatUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B9DA24EF90D4CB07ACD2E920 /* Pods_IosChatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IosChatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D48846393FCF98EF8C7DC6D9 /* Pods-IosChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosChat.release.xcconfig"; path = "Target Support Files/Pods-IosChat/Pods-IosChat.release.xcconfig"; sourceTree = "<group>"; };
+		DC0ED31C12FAAC461969F023 /* Pods-IosChatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosChatTests.release.xcconfig"; path = "Target Support Files/Pods-IosChatTests/Pods-IosChatTests.release.xcconfig"; sourceTree = "<group>"; };
+		F36416AB8685D850F8965BDA /* Pods-IosChatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosChatTests.debug.xcconfig"; path = "Target Support Files/Pods-IosChatTests/Pods-IosChatTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F4B90FD034890E64DCA108A3 /* Pods_IosChat_IosChatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IosChat_IosChatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24B904EF208AB19607A23D89 /* Pods_IosChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6D39C9CC76C122B00EFB0B7 /* Pods_IosChatTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DDBF3856D176D9A39F5CC21 /* Pods_IosChat_IosChatUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +104,8 @@
 				2C1F1C5826525ED100AEF8A8 /* IosChattTests */,
 				2C1F1C6326525ED100AEF8A8 /* IosChattUITests */,
 				2C1F1C4026525EC900AEF8A8 /* Products */,
+				5F08DD5B857A008F58EF8AD6 /* Pods */,
+				F1F91D623AFAA306353209E9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +128,7 @@
 				2C1F1C73265292AF00AEF8A8 /* ViewModels */,
 				2C1F1C722652929E00AEF8A8 /* Controllers */,
 				2C1F1C5026525ED100AEF8A8 /* Info.plist */,
+				2C1F1C7C2655078F00AEF8A8 /* GoogleService-Info.plist */,
 			);
 			path = IosChatt;
 			sourceTree = "<group>";
@@ -182,6 +202,30 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		5F08DD5B857A008F58EF8AD6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8D05630A56FDB04B863E462F /* Pods-IosChat.debug.xcconfig */,
+				D48846393FCF98EF8C7DC6D9 /* Pods-IosChat.release.xcconfig */,
+				68A44A86F202F878F49B8E47 /* Pods-IosChat-IosChatUITests.debug.xcconfig */,
+				958E4E3B8463294CF20F103C /* Pods-IosChat-IosChatUITests.release.xcconfig */,
+				F36416AB8685D850F8965BDA /* Pods-IosChatTests.debug.xcconfig */,
+				DC0ED31C12FAAC461969F023 /* Pods-IosChatTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F1F91D623AFAA306353209E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				373CB98868D831105E00FF8A /* Pods_IosChat.framework */,
+				F4B90FD034890E64DCA108A3 /* Pods_IosChat_IosChatUITests.framework */,
+				B9DA24EF90D4CB07ACD2E920 /* Pods_IosChatTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -189,9 +233,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C1F1C6926525ED100AEF8A8 /* Build configuration list for PBXNativeTarget "IosChat" */;
 			buildPhases = (
+				9D052CF065EC3AB50C6ABA29 /* [CP] Check Pods Manifest.lock */,
 				2C1F1C3B26525EC800AEF8A8 /* Sources */,
 				2C1F1C3C26525EC800AEF8A8 /* Frameworks */,
 				2C1F1C3D26525EC800AEF8A8 /* Resources */,
+				09496577030CD29EB88A617C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -206,6 +252,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C1F1C6C26525ED100AEF8A8 /* Build configuration list for PBXNativeTarget "IosChatTests" */;
 			buildPhases = (
+				08170A1B5FFE4592FAD269E3 /* [CP] Check Pods Manifest.lock */,
 				2C1F1C5126525ED100AEF8A8 /* Sources */,
 				2C1F1C5226525ED100AEF8A8 /* Frameworks */,
 				2C1F1C5326525ED100AEF8A8 /* Resources */,
@@ -224,9 +271,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C1F1C6F26525ED100AEF8A8 /* Build configuration list for PBXNativeTarget "IosChatUITests" */;
 			buildPhases = (
+				C86D7B2E314B542D71F4ACB3 /* [CP] Check Pods Manifest.lock */,
 				2C1F1C5C26525ED100AEF8A8 /* Sources */,
 				2C1F1C5D26525ED100AEF8A8 /* Frameworks */,
 				2C1F1C5E26525ED100AEF8A8 /* Resources */,
+				A3DF96142CC31ABE7B66A93B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -286,6 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C1F1C4F26525ED100AEF8A8 /* LaunchScreen.storyboard in Resources */,
+				2C1F1C7D2655078F00AEF8A8 /* GoogleService-Info.plist in Resources */,
 				2C1F1C4C26525ED100AEF8A8 /* Assets.xcassets in Resources */,
 				2C1F1C4A26525EC900AEF8A8 /* Main.storyboard in Resources */,
 			);
@@ -306,6 +356,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08170A1B5FFE4592FAD269E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IosChatTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		09496577030CD29EB88A617C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IosChat/Pods-IosChat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IosChat/Pods-IosChat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IosChat/Pods-IosChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D052CF065EC3AB50C6ABA29 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IosChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3DF96142CC31ABE7B66A93B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IosChat-IosChatUITests/Pods-IosChat-IosChatUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IosChat-IosChatUITests/Pods-IosChat-IosChatUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IosChat-IosChatUITests/Pods-IosChat-IosChatUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C86D7B2E314B542D71F4ACB3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IosChat-IosChatUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2C1F1C3B26525EC800AEF8A8 /* Sources */ = {
@@ -489,6 +642,7 @@
 		};
 		2C1F1C6A26525ED100AEF8A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D05630A56FDB04B863E462F /* Pods-IosChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -509,6 +663,7 @@
 		};
 		2C1F1C6B26525ED100AEF8A8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D48846393FCF98EF8C7DC6D9 /* Pods-IosChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -529,6 +684,7 @@
 		};
 		2C1F1C6D26525ED100AEF8A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F36416AB8685D850F8965BDA /* Pods-IosChatTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -551,6 +707,7 @@
 		};
 		2C1F1C6E26525ED100AEF8A8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC0ED31C12FAAC461969F023 /* Pods-IosChatTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -573,6 +730,7 @@
 		};
 		2C1F1C7026525ED100AEF8A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68A44A86F202F878F49B8E47 /* Pods-IosChat-IosChatUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -593,6 +751,7 @@
 		};
 		2C1F1C7126525ED100AEF8A8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 958E4E3B8463294CF20F103C /* Pods-IosChat-IosChatUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
