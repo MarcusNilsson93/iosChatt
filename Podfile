@@ -8,7 +8,11 @@ target 'IosChat' do
   # Pods for IosChat
 	pod 'Firebase/Analytics'
 	pod 'Firebase/Auth'
+	pod 'Firebase/Core'
+	pod 'Firebase/Database'
 	pod 'Firebase/Firestore'
+	pod 'Firebase/Storage'
+	pod 'MessageKit'
 
   target 'IosChatTests' do
     inherit! :search_paths

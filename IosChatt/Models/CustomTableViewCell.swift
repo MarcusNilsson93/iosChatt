@@ -9,11 +9,13 @@ import UIKit
 
 class CustomTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var nameLable: UILabel!
     @IBOutlet weak var Icon: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         Icon.image = UIImage(systemName: "person.crop.circle")
+        nameLable.text = "Unknown username"
         // Initialization code
     }
 

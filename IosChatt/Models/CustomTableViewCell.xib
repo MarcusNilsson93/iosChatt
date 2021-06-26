@@ -20,11 +20,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AFd-R2-qqy">
+                        <rect key="frame" x="52" y="12" width="252" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="Icon" destination="Chd-lR-6mg" id="rLk-aD-56l"/>
+                <outlet property="nameLable" destination="AFd-R2-qqy" id="nXX-50-ohV"/>
             </connections>
             <point key="canvasLocation" x="131.8840579710145" y="68.303571428571431"/>
         </tableViewCell>

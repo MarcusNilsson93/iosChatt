@@ -78,10 +78,12 @@ class RegistrationViewController: UIViewController {
     }
     func goToChatScreen() {
         
-        let homeViewController = storyboard?.instantiateViewController(identifier: "HomeVC")
+        self.performSegue(withIdentifier: "toHomeVC", sender: self)
         
-        view.window?.rootViewController = homeViewController
-        view.window?.makeKeyAndVisible()
+//        let homeViewController = storyboard?.instantiateViewController(identifier: "HomeVC")
+//
+//        view.window?.rootViewController = homeViewController
+//        view.window?.makeKeyAndVisible()
     }
     
 }

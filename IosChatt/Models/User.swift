@@ -7,8 +7,15 @@
 
 import Foundation
 
+//TODO Fix name variable
 class User {
-    init(_ username:String) {
-        
+    
+    let userName: String
+    let uid: String
+    
+    
+    init(_ username:String, uid:String) {
+        self.userName = username
+        self.uid = uid
     }
 }
