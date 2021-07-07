@@ -80,10 +80,10 @@ class RegistrationViewController: UIViewController {
         
         self.performSegue(withIdentifier: "toHomeVC", sender: self)
         
-//        let homeViewController = storyboard?.instantiateViewController(identifier: "HomeVC")
-//
-//        view.window?.rootViewController = homeViewController
-//        view.window?.makeKeyAndVisible()
+        //let homeViewController = storyboard?.instantiateViewController(identifier: "HomeVC")
+
+        //view.window?.rootViewController = homeViewController
+        //view.window?.makeKeyAndVisible()
     }
     
 }

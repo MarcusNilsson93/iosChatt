@@ -30,10 +30,10 @@ class LoginViewController: UIViewController {
                 self.errorLable.text = error!.localizedDescription
                 self.errorLable.alpha = 1
             } else {
-                //let homeViewController = self.storyboard?.instantiateViewController(identifier: "HomeVC")
-                //self.view.window?.rootViewController = homeViewController
-                //self.view.window?.makeKeyAndVisible()
-                self.performSegue(withIdentifier: "toHomeVC", sender: self)
+                let homeViewController = (self.storyboard?.instantiateViewController(identifier: "HomeVC"))! as ViewController
+                self.view.window?.rootViewController = homeViewController
+                self.view.window?.makeKeyAndVisible()
+                //self.performSegue(withIdentifier: "toHomeVC", sender: self)
                 
             }
         }

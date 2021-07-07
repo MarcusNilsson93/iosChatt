@@ -16,7 +16,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     private var usersCollectionRefrence: CollectionReference!
     private var searchUser = [User]()
     private var users = [User]()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,6 +25,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         tableView.dataSource = self
         usersCollectionRefrence = Firestore.firestore().collection("users")
         self.navigationItem.setHidesBackButton(true, animated: true)
+        print("Detta är den inloggade profilen \(String(describing: Auth.auth().currentUser?.displayName))")
 
 
         // Do any additional setup after loading the view.

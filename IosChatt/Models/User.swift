@@ -10,8 +10,8 @@ import Foundation
 //TODO Fix name variable
 class User {
     
-    let userName: String
-    let uid: String
+    var userName: String
+    var uid: String
     
     
     init(_ username:String, uid:String) {
