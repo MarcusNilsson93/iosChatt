@@ -7,8 +7,11 @@
 
 import Foundation
 
-//TODO Fix name variable
-class User {
+class User : Equatable {
+    static func == (lhs: User, rhs: User) -> Bool {
+        return lhs.userName == rhs.userName && lhs.uid == rhs.uid
+    }
+    
     
     var userName: String
     var uid: String

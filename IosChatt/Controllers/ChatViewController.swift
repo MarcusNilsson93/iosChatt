@@ -61,13 +61,9 @@ class ChatViewController: MessagesViewController, MessagesDataSource, MessagesLa
         
         let button = messageInputBar.sendButton
         button.addTarget(self, action: #selector(self.buttonClicked(sender:)), for: .touchUpInside)
-        user.userName = fireBaseUser?.displayName ?? "Current User"
-        user.uid = fireBaseUser?.uid ?? "0"
-        print(user.uid)
-        print(user.userName)
-
+        
     }
-
+    
     @objc func buttonClicked(sender: UIButton){
         let message = messageInputBar.inputTextView.text!
         print(message)
@@ -106,26 +102,31 @@ class ChatViewController: MessagesViewController, MessagesDataSource, MessagesLa
                     let data = document.data()
                     print(document)
                     print("Data\(data)")
-
+                    
                     let msg = data["msg"] as? String ?? "Error getting a message"
                     let msgId = data["messageId"] as? String ?? "0"
                     let timeStamp = data["sentDate"] as? Date ?? Date()
                     let to = data["to"] as? String ?? ""
+                    let from = data["from"] as? String ?? ""
                     
-                    if to == self.user.uid {
-                        self.messages.append(Message(sender: self.currentUser, messageId: msgId, sentDate: timeStamp, kind: .text(msg)) as MessageType)
-                    } else {
-                        self.messages.append(Message(sender: self.recivingUser, messageId: msgId, sentDate: timeStamp, kind: .text(msg)) as MessageType)
+                    if self.fireBaseUser!.uid == from || self.fireBaseUser!.uid == to {
+                        if to == self.user.uid {
+                            self.messages.append(Message(sender: self.currentUser, messageId: msgId, sentDate: timeStamp, kind: .text(msg)) as MessageType)
+                        } else if (from == self.user.uid) {
+                            self.messages.append(Message(sender: self.recivingUser, messageId: msgId, sentDate: timeStamp, kind: .text(msg)) as MessageType)
+                        } else {
+                            print("Not a message to this conversation")
+                        }
                     }
-
-            }
+                    
+                }
                 self.messagesCollectionView.reloadData()
                 self.messagesCollectionView.scrollToLastItem()
+            }
         }
+        
     }
-
-    }
-
+    
     func currentSender() -> SenderType {
         return currentUser
     }

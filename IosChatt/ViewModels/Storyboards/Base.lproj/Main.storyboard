@@ -28,7 +28,7 @@
         <!--Login-->
         <scene sceneID="mOH-p5-12E">
             <objects>
-                <viewController id="xuJ-5E-cXd" customClass="LoginViewController" customModule="IosChat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginVC" id="xuJ-5E-cXd" customClass="LoginViewController" customModule="IosChat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VPF-nt-lnK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

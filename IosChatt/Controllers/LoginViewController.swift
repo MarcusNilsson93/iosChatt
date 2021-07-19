@@ -30,6 +30,7 @@ class LoginViewController: UIViewController {
                 self.errorLable.text = error!.localizedDescription
                 self.errorLable.alpha = 1
             } else {
+                print(Auth.auth().currentUser?.email! as Any)
                 let homeViewController = (self.storyboard?.instantiateViewController(identifier: "HomeVC"))! as ViewController
                 self.view.window?.rootViewController = homeViewController
                 self.view.window?.makeKeyAndVisible()
