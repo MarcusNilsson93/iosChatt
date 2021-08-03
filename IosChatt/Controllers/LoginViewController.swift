@@ -23,6 +23,7 @@ class LoginViewController: UIViewController {
         //Create cleaned versions of the text fields
         let email = loginEmailTextfield.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         let password = loginPasswordTextfield.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        
         //Sign in the user
         Auth.auth().signIn(withEmail: email, password: password) { result, error in
             
@@ -31,13 +32,12 @@ class LoginViewController: UIViewController {
                 self.errorLable.alpha = 1
             } else {
                 print(Auth.auth().currentUser?.email! as Any)
+                
                 let homeViewController = (self.storyboard?.instantiateViewController(identifier: "HomeVC"))! as ViewController
                 self.view.window?.rootViewController = homeViewController
                 self.view.window?.makeKeyAndVisible()
-                //self.performSegue(withIdentifier: "toHomeVC", sender: self)
                 
             }
         }
     }
-  //Prepare to send right token
 }

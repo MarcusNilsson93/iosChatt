@@ -13,8 +13,6 @@
 		2C1F1C4A26525EC900AEF8A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C1F1C4826525EC900AEF8A8 /* Main.storyboard */; };
 		2C1F1C4C26525ED100AEF8A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C1F1C4B26525ED100AEF8A8 /* Assets.xcassets */; };
 		2C1F1C4F26525ED100AEF8A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C1F1C4D26525ED100AEF8A8 /* LaunchScreen.storyboard */; };
-		2C1F1C5A26525ED100AEF8A8 /* IosChattTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1F1C5926525ED100AEF8A8 /* IosChattTests.swift */; };
-		2C1F1C6526525ED100AEF8A8 /* IosChattUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1F1C6426525ED100AEF8A8 /* IosChattUITests.swift */; };
 		2C1F1C792652976600AEF8A8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1F1C782652976600AEF8A8 /* LoginViewController.swift */; };
 		2C1F1C7B2652978F00AEF8A8 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1F1C7A2652978F00AEF8A8 /* RegistrationViewController.swift */; };
 		2C1F1C7D2655078F00AEF8A8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C1F1C7C2655078F00AEF8A8 /* GoogleService-Info.plist */; };
@@ -23,7 +21,6 @@
 		2C831B9D265E529E00C2ECB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C831B9C265E529E00C2ECB6 /* ViewController.swift */; };
 		2C831BA4265E5E3C00C2ECB6 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C831BA2265E5E3C00C2ECB6 /* CustomTableViewCell.swift */; };
 		2C831BA5265E5E3C00C2ECB6 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C831BA3265E5E3C00C2ECB6 /* CustomTableViewCell.xib */; };
-		2C831BA72660F30600C2ECB6 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C831BA62660F30600C2ECB6 /* ProfileViewController.swift */; };
 		2CA6BE742657D07200F2C769 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA6BE732657D07200F2C769 /* Utilities.swift */; };
 		2CD5D6B32668E18200D06653 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD5D6B22668E18200D06653 /* ChatViewController.swift */; };
 		2CD5D6B526691BFE00D06653 /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD5D6B426691BFE00D06653 /* MessageModel.swift */; };
@@ -57,11 +54,7 @@
 		2C1F1C4E26525ED100AEF8A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C1F1C5026525ED100AEF8A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C1F1C5526525ED100AEF8A8 /* IosChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IosChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C1F1C5926525ED100AEF8A8 /* IosChattTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IosChattTests.swift; sourceTree = "<group>"; };
-		2C1F1C5B26525ED100AEF8A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C1F1C6026525ED100AEF8A8 /* IosChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IosChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C1F1C6426525ED100AEF8A8 /* IosChattUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IosChattUITests.swift; sourceTree = "<group>"; };
-		2C1F1C6626525ED100AEF8A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C1F1C782652976600AEF8A8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2C1F1C7A2652978F00AEF8A8 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		2C1F1C7C2655078F00AEF8A8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -70,7 +63,6 @@
 		2C831B9C265E529E00C2ECB6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2C831BA2265E5E3C00C2ECB6 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		2C831BA3265E5E3C00C2ECB6 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
-		2C831BA62660F30600C2ECB6 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		2CA6BE732657D07200F2C769 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		2CD5D6B22668E18200D06653 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		2CD5D6B426691BFE00D06653 /* MessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
@@ -117,8 +109,6 @@
 			isa = PBXGroup;
 			children = (
 				2C1F1C4126525EC900AEF8A8 /* IosChatt */,
-				2C1F1C5826525ED100AEF8A8 /* IosChattTests */,
-				2C1F1C6326525ED100AEF8A8 /* IosChattUITests */,
 				2C1F1C4026525EC900AEF8A8 /* Products */,
 				5F08DD5B857A008F58EF8AD6 /* Pods */,
 				F1F91D623AFAA306353209E9 /* Frameworks */,
@@ -149,31 +139,12 @@
 			path = IosChatt;
 			sourceTree = "<group>";
 		};
-		2C1F1C5826525ED100AEF8A8 /* IosChattTests */ = {
-			isa = PBXGroup;
-			children = (
-				2C1F1C5926525ED100AEF8A8 /* IosChattTests.swift */,
-				2C1F1C5B26525ED100AEF8A8 /* Info.plist */,
-			);
-			path = IosChattTests;
-			sourceTree = "<group>";
-		};
-		2C1F1C6326525ED100AEF8A8 /* IosChattUITests */ = {
-			isa = PBXGroup;
-			children = (
-				2C1F1C6426525ED100AEF8A8 /* IosChattUITests.swift */,
-				2C1F1C6626525ED100AEF8A8 /* Info.plist */,
-			);
-			path = IosChattUITests;
-			sourceTree = "<group>";
-		};
 		2C1F1C722652929E00AEF8A8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				2C1F1C782652976600AEF8A8 /* LoginViewController.swift */,
 				2C1F1C7A2652978F00AEF8A8 /* RegistrationViewController.swift */,
 				2C831B9C265E529E00C2ECB6 /* ViewController.swift */,
-				2C831BA62660F30600C2ECB6 /* ProfileViewController.swift */,
 				2CD5D6B22668E18200D06653 /* ChatViewController.swift */,
 			);
 			path = Controllers;
@@ -492,7 +463,6 @@
 				2C831B9D265E529E00C2ECB6 /* ViewController.swift in Sources */,
 				2CA6BE742657D07200F2C769 /* Utilities.swift in Sources */,
 				2CD5D6B32668E18200D06653 /* ChatViewController.swift in Sources */,
-				2C831BA72660F30600C2ECB6 /* ProfileViewController.swift in Sources */,
 				2C831BA4265E5E3C00C2ECB6 /* CustomTableViewCell.swift in Sources */,
 				2C1F1C792652976600AEF8A8 /* LoginViewController.swift in Sources */,
 				2C1F1C4326525EC900AEF8A8 /* AppDelegate.swift in Sources */,
@@ -508,7 +478,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C1F1C5A26525ED100AEF8A8 /* IosChattTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,7 +485,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C1F1C6526525ED100AEF8A8 /* IosChattUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

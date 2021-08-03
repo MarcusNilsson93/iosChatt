@@ -60,11 +60,11 @@ class ChatViewController: MessagesViewController, MessagesDataSource, MessagesLa
         messageInputBar.setLeftStackViewWidthConstant(to: 50, animated: false)
         
         let button = messageInputBar.sendButton
-        button.addTarget(self, action: #selector(self.buttonClicked(sender:)), for: .touchUpInside)
+        button.addTarget(self, action: #selector(self.sendButtonClicked(sender:)), for: .touchUpInside)
         
     }
     
-    @objc func buttonClicked(sender: UIButton){
+    @objc func sendButtonClicked(sender: UIButton){
         let message = messageInputBar.inputTextView.text!
         print(message)
         sendMessage(Message: message, To: user.uid, From: fireBaseUser?.uid)

@@ -16,7 +16,13 @@ class RegistrationViewController: UIViewController {
     @IBOutlet weak var errorLable: UILabel!
     
     override func viewDidLoad() {
+        let auth = Auth.auth()
         super.viewDidLoad()
+        do{
+            try auth.signOut()
+        } catch let signOutError {
+            print(signOutError)
+        }
         
     }
     
@@ -58,7 +64,7 @@ class RegistrationViewController: UIViewController {
                     
                 } else {
                     let db = Firestore.firestore()
-                    
+                    print(result!)
                     db.collection("users").addDocument(data: ["username":userName, "uid": result!.user.uid]) { error in
                         
                         if error != nil {
@@ -67,7 +73,15 @@ class RegistrationViewController: UIViewController {
                     }
                     
                     //Transision to chatView
-                    self.goToChatScreen()
+                    Auth.auth().signIn(withEmail: email, password: password) { result, error in
+                        if error != nil {
+                            self.errorLable.text = error!.localizedDescription
+                            self.errorLable.alpha = 1
+                        } else {
+                            print("signedIn")
+                            self.goToChatScreen()
+                        }
+                    }
                 }
             }
         }
@@ -77,13 +91,11 @@ class RegistrationViewController: UIViewController {
         errorLable.alpha = 1
     }
     func goToChatScreen() {
-        
-        //self.performSegue(withIdentifier: "toHomeVC", sender: self)
-        
-        let homeViewController = storyboard?.instantiateViewController(identifier: "loginVC")
-        
-        view.window?.rootViewController = homeViewController
-        view.window?.makeKeyAndVisible()
+        self.navigationController?.popToRootViewController(animated: true)
+
+//        let homeViewController = (self.storyboard?.instantiateViewController(identifier: "HomeVC"))! as ViewController
+//        self.view.window?.rootViewController = homeViewController
+//        self.view.window?.makeKeyAndVisible()
     }
     
 }

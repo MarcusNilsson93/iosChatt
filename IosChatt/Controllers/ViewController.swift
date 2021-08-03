@@ -25,7 +25,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         tableView.dataSource = self
         usersCollectionRefrence = Firestore.firestore().collection("users")
         self.navigationItem.setHidesBackButton(true, animated: true)
-        print("Detta är den inloggade profilen \(String(describing: Auth.auth().currentUser?.uid))")
         
     }
     
@@ -78,4 +77,20 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         vc.title = selectedUser.userName
         navigationController?.pushViewController(vc, animated: true)
     }
+    
+    @IBAction func logout(_ sender: Any) {
+        let auth = Auth.auth()
+        do{
+            try auth.signOut()
+            self.navigationController?.popToRootViewController(animated: true)
+//            let loginViewController = (self.storyboard?.instantiateViewController(identifier: "loginVC"))! as LoginViewController
+//            self.view.window?.rootViewController = loginViewController
+//            self.view.window?.makeKeyAndVisible()
+        } catch let signOutError {
+            print(signOutError)
+            
+        }
+                
+    }
+    
 }
