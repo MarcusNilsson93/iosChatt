@@ -16,13 +16,11 @@ class RegistrationViewController: UIViewController {
     @IBOutlet weak var errorLable: UILabel!
     
     override func viewDidLoad() {
-        let auth = Auth.auth()
         super.viewDidLoad()
-        do{
-            try auth.signOut()
-        } catch let signOutError {
-            print(signOutError)
-        }
+        
+        registerEmailTextfield.text = ""
+        registerPasswordTextfield.text = ""
+        errorLable.text = ""
         
     }
     
@@ -38,7 +36,7 @@ class RegistrationViewController: UIViewController {
         //check if password is secure
         let cleanedPassword = registerPasswordTextfield.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         if Utilities.isPasswordValid(cleanedPassword) == false {
-            return "please make sure your password is at least 8 charecters, contains a special charecter and a number"
+            return "Please make sure your password is at least 8 charecters, contains a special charecter and a number"
         }
         
         return nil
@@ -91,11 +89,7 @@ class RegistrationViewController: UIViewController {
         errorLable.alpha = 1
     }
     func goToChatScreen() {
-        self.navigationController?.popToRootViewController(animated: true)
-
-//        let homeViewController = (self.storyboard?.instantiateViewController(identifier: "HomeVC"))! as ViewController
-//        self.view.window?.rootViewController = homeViewController
-//        self.view.window?.makeKeyAndVisible()
+        self.performSegue(withIdentifier: "goToChat", sender: self)
     }
     
 }

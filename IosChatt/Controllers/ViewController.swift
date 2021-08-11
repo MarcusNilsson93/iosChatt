@@ -20,7 +20,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         super.viewDidLoad()
         
         tableView.register(UINib(nibName: "CustomTableViewCell", bundle: nil), forCellReuseIdentifier: "CustomTableViewCell")
-        
         tableView.delegate = self
         tableView.dataSource = self
         usersCollectionRefrence = Firestore.firestore().collection("users")
@@ -40,8 +39,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                     let uid = data["uid"] as? String ?? "0"
                     
                     let newUser = User(userName, uid: uid)
-                    print(newUser.uid)
                     if self.users.isEmpty && newUser.uid != Auth.auth().currentUser?.uid {
+                        print("inloggad användare \(Auth.auth().currentUser?.uid ?? "nil")")
                         self.users.append(newUser)
                     } else if (!users.isEmpty && newUser.uid != Auth.auth().currentUser?.uid) {
                         if !self.users.contains(newUser) {
@@ -83,9 +82,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         do{
             try auth.signOut()
             self.navigationController?.popToRootViewController(animated: true)
-//            let loginViewController = (self.storyboard?.instantiateViewController(identifier: "loginVC"))! as LoginViewController
-//            self.view.window?.rootViewController = loginViewController
-//            self.view.window?.makeKeyAndVisible()
         } catch let signOutError {
             print(signOutError)
             
