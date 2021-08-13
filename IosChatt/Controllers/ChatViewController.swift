@@ -29,8 +29,8 @@ class ChatViewController: MessagesViewController, MessagesDataSource, MessagesLa
     
     private var fireBaseUser = Firebase.Auth.auth().currentUser
     private var user: User
-    let currentUser = Sender(senderId: "self", displayName: "Marcus")
-    let recivingUser = Sender(senderId: "other", displayName: "other user")
+    let currentUser = Sender(senderId: "self", displayName: "\(Firebase.Auth.auth().currentUser?.displayName ?? "Me")")
+    let recivingUser = Sender(senderId: "other", displayName: "Other user")
     var messages = [MessageType]()
     
     
@@ -86,7 +86,6 @@ class ChatViewController: MessagesViewController, MessagesDataSource, MessagesLa
         }
     }
     
-    
     override func viewDidAppear(_ animated: Bool) {
         
         let docRef = db.collection("Conversations").order(by: "sentDate")
@@ -100,8 +99,6 @@ class ChatViewController: MessagesViewController, MessagesDataSource, MessagesLa
                 for document in snap.documents {
                     
                     let data = document.data()
-                    print(document)
-                    print("Data\(data)")
                     
                     let msg = data["msg"] as? String ?? "Error getting a message"
                     let msgId = data["messageId"] as? String ?? "0"
@@ -114,8 +111,6 @@ class ChatViewController: MessagesViewController, MessagesDataSource, MessagesLa
                             self.messages.append(Message(sender: self.currentUser, messageId: msgId, sentDate: timeStamp, kind: .text(msg)) as MessageType)
                         } else if (from == self.user.uid) {
                             self.messages.append(Message(sender: self.recivingUser, messageId: msgId, sentDate: timeStamp, kind: .text(msg)) as MessageType)
-                        } else {
-                            print("Not a message to this conversation")
                         }
                     }
                     

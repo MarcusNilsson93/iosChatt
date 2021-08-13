@@ -24,6 +24,7 @@ class LoginViewController: UIViewController {
         loginPasswordTextfield.text = ""
         errorLable.text = ""
     }
+    
     @IBAction func loginButtonAction(_ sender: Any) {
         //Validate Text Fields
         //Create cleaned versions of the text fields

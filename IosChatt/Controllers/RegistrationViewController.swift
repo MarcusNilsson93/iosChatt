@@ -84,10 +84,12 @@ class RegistrationViewController: UIViewController {
             }
         }
     }
+    
     func showError(message:String) {
         errorLable.text = message
         errorLable.alpha = 1
     }
+    
     func goToChatScreen() {
         self.performSegue(withIdentifier: "goToChat", sender: self)
     }
